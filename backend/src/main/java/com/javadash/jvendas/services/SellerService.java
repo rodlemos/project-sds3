@@ -1,0 +1,23 @@
+package com.javadash.jvendas.services;
+
+import java.util.List;
+import java.util.stream.Collectors;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.javadash.jvendas.dto.SellerDTO;
+import com.javadash.jvendas.entities.Seller;
+import com.javadash.jvendas.repositories.SellerRepository;
+
+@Service
+public class SellerService {
+	
+	@Autowired
+	private SellerRepository repository;
+	
+	public List<SellerDTO> findAll() {
+		List<Seller> result = repository.findAll();
+		return result.stream().map(x -> new SellerDTO(x)).collect(Collectors.toList());
+	}
+}
