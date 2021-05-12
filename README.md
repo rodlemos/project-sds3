@@ -8,7 +8,7 @@ Front-end desenvolvido com React e Bootstrap. Back-end desenvolvido em Java atra
   - Desenvolvimento completo de Front-end e Back-end.
   - Implatação da aplicação utilizando Netlify e Heroku.
 
-##Técnologias e bibliotecas:
+## Técnologias e bibliotecas:
   - Typescript
   - React
   - Bootstrap
